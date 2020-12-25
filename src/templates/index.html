@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	background-color: #F7F1E3;
+}
+
+.page {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;	
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+	{{#page_title}}
+	<h2>Nevek</h2>
+	{{/page_title}}
+
+	<table>
+	  <tr>
+	    <th>{{title}}</th>
+	    <th>{{vote}}</th>
+	  </tr>
+
+	  {{#name}}
+	  <tr>
+	    <td>{{name_text}}</td>
+	    <td>{{name_vote}}</td>
+	  </tr>
+	  {{/name}}
+
+	</table>
+
+	{{#_debug_data}}
+	<pre>{{.}}</pre>
+	{{/_debug_data}}
+
+	<hr>
+
+	<p>
+	{{no_escape}}
+	</p>
+	
+	<p>
+	{{{no_escape}}}
+	</p>
+
+</div>
+
+</body>
+</html>
