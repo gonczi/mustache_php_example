@@ -13,6 +13,6 @@ The index page available at localhost's port 8000: http://127.0.0.1:8000
 For cleaning up everything: hit CTRL+C and:
 
 ```
-docker rm mustache_example_webapp_1
-docker rmi mustache_example_webapp_1
+docker rm mustache_php_example_webapp_1
+docker rmi mustache_php_example_webapp_1
 ```
